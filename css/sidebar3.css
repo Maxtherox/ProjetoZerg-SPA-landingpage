@@ -1,0 +1,73 @@
+/* The sidebar menu */
+.sidebar3 {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: relative; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #F9FAFB;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    
+  }
+  
+  /* The sidebar links */
+  .sidebar3 a {
+      background-color: rgb(54, 54, 54);
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin-left: 0px;
+    padding-left: 80px;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar3 a:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .2s;
+    color: #ff0062;
+    
+    transform: scale(1.05);
+    transition: .2s;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar3 .closebtn2 {
+    position: absolute;
+    top: 175px;
+    width: 250px;
+    right: 0px;
+    padding-left: 140px;
+    font-size: 37px;
+    margin-left: 0px;
+    color:rgb(255, 255, 255);
+    background-color: #FD0054;
+  }
+
+  .sidebar3 .closebtn2:hover {
+    
+    color:rgb(0, 0, 0);
+    transform: scale(1);
+    
+  }
+  
+  
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+    
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar3 {padding-top: 15px;}
+    .sidebar3 a {font-size: 18px;}
+  }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+    <title>Project Zerg</title>
+</head>
+  
+    <div class="login">
+      <body>
+        
+        <div class="login-form">
+         <div class="login-form-wrapper">
+             <img src="images/Irelia.gif" alt="">
+             <div class="login-title">
+                 <h2>Login</h2>
+             <a href="views/register.html">Criar conta</a>
+             </div>
+             
+            <form>
+                <div class="form-group">
+                 <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite seu email">
+                  <small id="emailHelp" class="form-text text-muted">Nunca compartilhe seu email.</small>
+                </div>
+                <div class="form-group">
+                  <label for="senha">Senha</label>
+                  <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Lembrar senha</label>
+                </div>
+                <button type="button" class="btn ">Entre</button>
+              </form>
+         </div>            
+        </div>
+        <div class="banner-login">
+          
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/pngegg.png" alt="Avatar" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Guilherme MaxTR</h1> 
+                <p>Promador & Videomaker</p> 
+                <p>Site em desenvolvimento</p>
+              </div>
+            </div>
+          </div>
+
+
+           
+           <h2>MaxTR</h2>
+           
+        </div>
+        <div id="main" class="divbtn2 ">
+          <button class="openbtn2" onclick="openNav()" >&#9776; </button> 
+        </div>
+        <div id="mySidebar" class=" sidebar3 sidebar2">
+          <a href="javascript:void(0)" class="closebtn2" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+          
+        </div>
+        
+    </div>
+   
+    <script src="plugins/bootstrap/js/bootstrap.min.js" ></script>
+    <script src="plugins/fontawesome/js/all.min.js"></script>
+    <script>
+      let button = document.querySelector('form button.btn')
+      button.addEventListener('click',() => {
+        location.href = "views/dashboard.html"
+      })
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginRight = "0px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginRight= "0";
+      }
+      </script>
+</body>
+</html>

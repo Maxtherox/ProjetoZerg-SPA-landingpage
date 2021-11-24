@@ -1,0 +1,143 @@
+main {
+    display: block;
+    height: 100%;
+    background-color: #f7f7f7;
+    width: 100%
+    
+}
+
+
+main .main-content {
+    padding: 30px;
+    width: 100%;
+    height: calc(100% - 90px);
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: #666666;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(253, 0, 84);
+}
+
+
+.main-content .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px 0;
+    border: none;
+}
+
+.panel-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px ;
+    
+}
+
+.panel-50 {
+    width: 48%;
+}
+
+.panel-row button {
+    height: 180px;
+    color: white;
+    background: linear-gradient(135deg, #a777e3, rgb(255, 53, 53));
+    border: none;
+    
+}
+
+.panel-row button:hover{
+    transform: scale(1.05);
+    transition: .2s;
+    background: linear-gradient(135deg, #7d13ff, rgb(255, 53, 53));
+    box-shadow: 1px 1px 10px rgb(197, 110, 255);
+    
+}
+
+.postestranho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 30px;
+
+    
+}
+
+main div .pctext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 100px;
+}
+
+
+.container {
+    max-width: 100%;
+    padding-left: 300px;
+  }
+  
+  .pricing-header {
+    max-width: 700px;
+    padding-left: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+  }
+  
+  div.ajax-content {
+      width: 100%;
+      border: 1px solid red;
+      height: 200px;
+      margin-top: 20px;
+  }
+  
+ @media screen and (max-width:700px){
+    .menu ul li a{
+        font-size: 10px;
+        
+    }
+    
+    sidebar {
+        width: 80px;
+        height: 10%;
+    }
+ }
+
+
+
+/**
+@media screen and (max-width:500px){
+    .menu ul li a{
+        display: none;
+        
+    }
+    
+    div.menu ul li i{
+        font-size: 40px;
+        padding-left: 30px;
+        margin: 10px;
+
+    }
+}**/

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <title>Project Zerg</title>
+</head>
+<body>
+    <div class="flex-dashboard">
+        <sidebar id="mySidebar" class="sidebar2">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="sidebar-title">
+                <img src="../images/l2.png" alt="">
+                <h2>Project Zerg</h2>
+            </div>
+            <div class="menu" >
+                <ul >
+                    <li>
+                        <i class="fas fa-home"></i>
+                        <a href="dashboard.html"> Dashboard</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-user-circle"></i>
+                        <a href="#"> Perfil</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-cart-plus"></i>
+                        
+                        <a href="../views/loja.html">  Loja</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-users"></i>
+                        <a href="#">Comunidade</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-images"></i>
+                        <a href="#">Repositorio</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-question-circle"></i>
+                        <a href="#"> Suporte</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </sidebar>
+    
+        <main>
+            <header><div id="main" class="divbtn">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+              </div>
+                
+                <a href="../index.html"> <i class="fas fa-sign-out-alt "></i> Logout</a>
+            </header>
+        <div class="main-content">
+           
+            <div class="panel panel-row">
+                <div class="">
+                  <h1 class="panel">Sistema de mensalidade</h1>
+                  <p class=" panel-row  align-items-center">Aqui vemos um layout de uma area de vendas onde você pode fazer suas compras ou assinar mensalidade para determinado produto.</p>
+                  <div class="panel"->
+                   <button type="button"class="panel-50 align-items-center btn2" a-view="verCompra" onclick="fetchContent(this)" a-folder="compra" >Estou interessado</button>
+                   
+                </div>
+                <div class="content" id="ajax-content">
+
+                </div>
+              </div>
+              
+              
+              </div>
+            </div>
+        </div> 
+
+    </main>
+    </div>
+    <script src="/js/ajax.js"></script>
+   
+    <script>
+        /*
+        let button = document.querySelector('div button.btn2')
+        button.addEventListener('click',() => {
+          location.href ="../views/compra.html"
+        })
+      */
+      </script>
+    <script>
+              
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginRight = "0px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginRight= "0";
+        }
+        </script>
+    <script> src="../js/sidebar.js"</script> 
+    <script> src="../plugins/bootstrap/js/bootstrap.min.js" </script>
+    <script> src="../plugins/fontawesome/js/all.min.js"</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    /** border box, se mudar o padding ou margin o elemento não vai mudar de tamanho **/
+    box-sizing: border-box;
+    font-family: 'Muli'
+}
+
+html, body {
+    height: 100%;
+}

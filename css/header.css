@@ -1,0 +1,28 @@
+.flex-dashboard header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color: white;
+    padding: 10px 30px;
+    border: 1px solid rgba(0,0,0,.0625);
+    width: 100%;
+}
+
+.flex-dashboard header a {
+    text-decoration: none;
+    color: #72777a;
+}
+
+.flex-dashboard header a:hover{
+    
+    transform: scale(1.15);
+    transition: .2s;
+    
+}
+
+.flex-dashboard header a  {
+    color: #ff0062;
+}
+

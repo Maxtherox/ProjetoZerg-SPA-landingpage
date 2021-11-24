@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <title>Project Zerg</title>
+</head>
+<body>
+    <div class="register-parent">
+        <div class="register">
+            <div class="register-title">
+                <img src="../images/LoL_Facebook_Icon_14.gif" alt="">
+                <h2>Project Zerg</h2>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Digite seu nome">
+                  </div>
+                  <div class="form-group">
+                    <label for="numero">Telefone</label>
+                    <input type="number" class="form-control" id="numero" aria-describedby="emailHelp" placeholder="Digite seu numero">
+                  </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Digite seu email">
+                </div>
+                <div class="form-group">
+                  <label for="senha">Senha</label>
+                  <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+                
+                <button type="button" class="btn  ">Cadastrar</button>
+              </form> 
+        </div>
+    </div>
+    <script>
+      let button = document.querySelector('form button.btn')
+      button.addEventListener('click',() => {
+        location.href = "../views/dashboard.html"
+      })
+    </script>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js" ></script>
+    <script src="../plugins/fontawesome/js/all.min.js"></script>
+</body>
+</html>
